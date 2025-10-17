@@ -14,8 +14,8 @@ def get_num_charaters(text):
 
 def get_charaters_list(char_dict):
     dict_list = []
-    for char in char_dict:
-        dict_list.append({'char': char, 'num': char_dict[char]})
+    for char, num in char_dict.items():
+        dict_list.append({'char': char, 'num': num})
 
     def get_num(dictionary):
         return dictionary['num']
